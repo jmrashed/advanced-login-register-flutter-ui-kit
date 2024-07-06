@@ -1,6 +1,6 @@
 # FAQ
 
-Here are 20 basic questions for beginners to understand your login and registration page UI in Flutter:
+Here are 100 basic questions for beginners to understand your login and registration page UI in Flutter:
 
 1. **What package needs to be imported to use Flutter's material design?**
    - `import 'package:flutter/material.dart';`

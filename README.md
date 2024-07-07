@@ -109,6 +109,10 @@ To customize the app, you can modify the UI components in `login.dart` and `regi
 
 <img src="./assets/Screenshot_2.png">
 
+<img src="./assets/Screenshot_4.png">
+
+<img src="./assets/Screenshot_5.png">
+
 
 ## Contributing
 

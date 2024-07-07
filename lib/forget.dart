@@ -21,8 +21,8 @@ class _MyForgetState extends State<MyForget> {
           children: [
             Container(),
             Container(
-              padding: EdgeInsets.only(left: 35, top: 140),
-              child: Text('Forget Password', style: TextStyle(color: Colors.white, fontSize: 33),),
+              padding: const EdgeInsets.only(left: 35, top: 140),
+              child: const Text('Forget Password', style: TextStyle(color: Colors.white, fontSize: 33),),
             ),
             SingleChildScrollView(
               child: Container(
@@ -32,12 +32,12 @@ class _MyForgetState extends State<MyForget> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Container(
-                        margin: EdgeInsets.only(left: 35, right: 35),
+                        margin: const EdgeInsets.only(left: 35, right: 35),
                         child: Column(
                           children: [
                             TextField(
 
-                              style: TextStyle(color: Colors.black),
+                              style: const TextStyle(color: Colors.black),
                               decoration: InputDecoration(
                                 fillColor: Colors.grey.shade100,
                                 filled: true,
@@ -46,9 +46,9 @@ class _MyForgetState extends State<MyForget> {
                                 
                               ),
                             ),
-                            SizedBox(height: 30,),
+                            const SizedBox(height: 30,),
                             TextField(
-                              style: TextStyle(color: Colors.black),
+                              style: const TextStyle(color: Colors.black),
                               decoration: InputDecoration(
                                 fillColor: Colors.grey.shade100,
                                 filled: true,
@@ -64,16 +64,18 @@ class _MyForgetState extends State<MyForget> {
                              Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
-                                Text('Forget Password',style: TextStyle(
+                                const Text('Forget Password',style: TextStyle(
                                     fontSize: 27, fontWeight: FontWeight.w700
                                 )),
                                 CircleAvatar(
                                   radius: 30,
-                                  backgroundColor: Color(0xff4c505b),
+                                  backgroundColor: const Color(0xff4c505b),
                                   child: IconButton(
                                       color: Colors.white,
-                                      onPressed: () {},
-                                      icon: Icon(
+                                      onPressed: () {
+                                        Navigator.pushNamed(context, 'otp');
+                                      },
+                                      icon: const Icon(
                                         Icons.arrow_forward,
                                       )),
                                 )

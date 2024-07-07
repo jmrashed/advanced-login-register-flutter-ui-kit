@@ -11,7 +11,7 @@ class _MyLoginState extends State<MyLogin> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      decoration: BoxDecoration(
+      decoration: const BoxDecoration(
         image: DecorationImage(
             image: AssetImage('assets/login.png'), fit: BoxFit.cover),
       ),
@@ -22,8 +22,8 @@ class _MyLoginState extends State<MyLogin> {
             Container(),
             Container(
               padding: EdgeInsets.only(left: 35, top: 130),
-              child: Text(
-                'Welcome\nBack',
+              child: const  Text(
+                'Welcome Back',
                 style: TextStyle(color: Colors.white, fontSize: 33),
               ),
             ),
@@ -48,7 +48,7 @@ class _MyLoginState extends State<MyLogin> {
                                   borderRadius: BorderRadius.circular(10),
                                 )),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 30,
                           ),
                           TextField(
@@ -62,13 +62,13 @@ class _MyLoginState extends State<MyLogin> {
                                   borderRadius: BorderRadius.circular(10),
                                 )),
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 40,
                           ),
                           Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
-                              Text(
+                              const Text(
                                 'Sign in',
                                 style: TextStyle(
                                     fontSize: 27, fontWeight: FontWeight.w700),
@@ -78,14 +78,16 @@ class _MyLoginState extends State<MyLogin> {
                                 backgroundColor: Color(0xff4c505b),
                                 child: IconButton(
                                     color: Colors.white,
-                                    onPressed: () {},
-                                    icon: Icon(
+                                    onPressed: () {
+                                      Navigator.pushNamed(context, 'dashboard');
+                                    },
+                                    icon: const Icon(
                                       Icons.arrow_forward,
                                     )),
                               )
                             ],
                           ),
-                          SizedBox(
+                          const SizedBox(
                             height: 40,
                           ),
                           Row(
@@ -95,7 +97,7 @@ class _MyLoginState extends State<MyLogin> {
                                 onPressed: () {
                                   Navigator.pushNamed(context, 'register');
                                 },
-                                child: Text(
+                                child: const Text(
                                   'Sign Up',
                                   textAlign: TextAlign.left,
                                   style: TextStyle(
@@ -109,7 +111,7 @@ class _MyLoginState extends State<MyLogin> {
                                   onPressed: () {
                                     Navigator.pushNamed(context, 'forget');
                                   },
-                                  child: Text(
+                                  child: const Text(
                                     'Forgot Password',
                                     style: TextStyle(
                                       decoration: TextDecoration.underline,
